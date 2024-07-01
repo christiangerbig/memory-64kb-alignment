@@ -1,3 +1,3 @@
 # Memory-64kB-Alignment
 
-With this way of memory alignment you can allocate memory blocks with an absolute address without using AllocAbs() in a system friendly way on the Commodore Amiga.
+An 68k assembler example how to allocate a 64 kb aligned chip memory block without using absolute addresses in a system friendly way on the Commodore Amiga.
