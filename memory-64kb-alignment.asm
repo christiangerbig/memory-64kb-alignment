@@ -13,7 +13,7 @@ MEMF_CLEAR			EQU $00010000
 RETURN_OK			EQU 0
 RETURN_FAIL			EQU 20
 
-memory_requirements		EQU MEMF_PUBLIC+MEMF_CHIP+MEMF_CLEAR
+memory_requirements		EQU MEMF_PUBLIC|MEMF_CHIP+MEMF_CLEAR
 memory_size			EQU 1900 ;Maximum size 65535 bytes
 memory_64kb_size		EQU 65536
 memory_request                  EQU memory_size+memory_64kb_size
