@@ -22,9 +22,9 @@ memory_request                  EQU memory_size+memory_64kb_size
 	SECTION memory_64kb_alignment,CODE
 
 memory_alloc
-	move.l	exec_base.w,a6
 	move.l	#memory_request,d0
 	move.l	#memory_requirements,d1
+	move.l	exec_base.w,a6
 	jsr	_LVOAllocMem(a6)
 	tst.l	d0
 	bne.s	memory_alloc_ok
