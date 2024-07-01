@@ -9,7 +9,7 @@ MEMF_PUBLIC			EQU $00000001 ;compability with future OS versions
 MEMF_CHIP			EQU $00000002
 MEMF_CLEAR			EQU $00010000
 
-; ** DOS errors **
+; ** AmigaDOS command return codes **
 RETURN_OK			EQU 0
 RETURN_FAIL			EQU 20
 
