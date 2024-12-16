@@ -18,6 +18,7 @@ memory_size			EQU 1900 ; maximum size 65535 bytes
 memory_64kb_size		EQU 65536
 memory_request                  EQU memory_size+memory_64kb_size
 
+
 ; Input
 ; Result
 ; d0.l	Returncode fail or pointer 64 kB aligned memory block
@@ -52,6 +53,7 @@ cleanup_memory
 	jsr	_LVOFreeMem(a6)
 	moveq	#RETURN_OK,d0
 	rts
+
 
 	CNOP 0,4
 memory_block			DC.L 0
